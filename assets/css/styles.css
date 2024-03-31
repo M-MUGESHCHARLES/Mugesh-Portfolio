@@ -52,6 +52,10 @@ p {
     display: grid;
 }
 
+hr {
+    margin: 30px 50px !important;
+}
+
 /* ============================================================================================================ */
 /*           Buttons        */
 /* ============================================================================================================ */
@@ -246,11 +250,11 @@ p {
 }
 
 .contacts-container-1 {
-    margin-top: 20px;
+    margin: 20px 0 10px;
 }
 
 .contacts-container-2 {
-    /* padding: 45px 45px 0 !important; */
+    padding: 45px 5px 0 !important;
     margin-top: 20px;
 }
 
@@ -314,7 +318,7 @@ iframe {
     }
 
     .contacts-container-2 {
-        margin-top: 80px;
+        margin-top: 30px;
     }
     
     .contacts-info td {
