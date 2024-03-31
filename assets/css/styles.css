@@ -232,6 +232,10 @@ p {
     height: 10px !important;
 }
 
+.vr {
+    height: 85%;
+    align-self: center !important; /* Add this line to vertically center the.vr element */
+}
 
 /* ============================================================================================================ */
 /*       contacts.html      */
@@ -321,6 +325,9 @@ iframe {
         margin-bottom: 15px;
     }
 
+   .vr {
+    display: none !important;
+   }
     
 }
 
