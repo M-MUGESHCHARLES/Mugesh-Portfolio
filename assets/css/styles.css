@@ -39,7 +39,7 @@ p {
 .background-body {
     display: grid;
      background-color: #793FDF;
-
+     width: fit-content;
      letter-spacing: 0.7px;
      line-height: 1.7rem;
 }
