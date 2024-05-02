@@ -133,6 +133,14 @@
      }
  }
 
+/*    for mobile view    */
+
+ @media only screen and (max-width: 500px) {
+     .wave h2 {
+         font-size: 3rem !important;
+     }
+ }
+
  /* ============================================================================================ */
  /*           4. wave header reflection bottom   - used in contacts.html    */
  /* ============================================================================================ */
@@ -183,13 +191,40 @@
 }
 
  /* ============================================================================================ */
- /*            responsive styles            */
+ /*            6.  particles animation    - used in home page [ index.html]                               */
  /* ============================================================================================ */
 
-/*    for mobile view    */
 
- @media only screen and (max-width: 500px) {
-     .wave h2 {
-         font-size: 3rem !important;
-     }
- }
+       canvas {
+           display: block;
+           vertical-align: bottom;
+       }
+
+       /* ---- particles.js container ---- */
+
+       #particles-js {
+           /** position: absolute;
+           width: 100%;
+           height: 100%; **/
+
+           background-color: #FFF7F1;
+           background-image: url("");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: 50% 50%;
+
+           /* min-height: 700px !important; */
+
+            max-height: 600px !important;
+            height: max-content;
+            
+       }
+
+/* ============================================================================================ */
+ /*                                          */
+ /* ============================================================================================ */
+
+
+
+
+
