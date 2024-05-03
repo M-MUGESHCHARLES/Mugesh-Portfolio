@@ -233,7 +233,7 @@ hr {
     position: absolute;
 }
 
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:1020px) {
 
     .home-top-content1 {
         position: relative;
