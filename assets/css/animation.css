@@ -220,13 +220,27 @@
             
        }
 
-      @media only screen and (max-width:1010px) {
+      @media only screen and (max-width:1020px) {
 
         canvas {
                 display: none;
          }
         
      }
+
+    @media only screen and (max-width: 1000px) {
+
+        #particles-js {
+            margin-bottom: 50px;
+        }
+     }
+
+    @media only screen and (max-width: 970px) {
+
+        #particles-js {
+            margin-bottom: 80px;
+        }
+    }
 
       @media only screen and (max-width:770px) {
 
