@@ -39,7 +39,7 @@ p {
 .background-body {
     display: grid;
      background-color: #793FDF;
-     
+         padding: 0 15px;
      letter-spacing: 0.7px;
      line-height: 1.7rem;
 }
@@ -47,6 +47,12 @@ p {
 @media (width<=350px) {
     .background-body {
         width: fit-content;
+    }
+}
+
+@media (width<400px) {
+    .background-body {
+        padding: 0;
     }
 }
 
@@ -225,6 +231,35 @@ hr {
 .home-content {
     position: absolute;
 }
+
+@media only screen and (max-width:770px) {
+
+    .home-content {
+        position: relative;
+    }
+}
+
+ .home-contents-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-top-content,
+.home-bottom-content {
+    width: 100%;
+} 
+
+.home-top-content {
+    margin-bottom: 20px;
+} 
+
+@media (max-width: 600px ) {
+
+    .home-top-content {
+        margin-bottom: 90px;
+    }
+}
+
 
 /* ============================================================================================================ */
 /*       skills.html       */
