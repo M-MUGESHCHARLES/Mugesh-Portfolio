@@ -228,13 +228,13 @@ hr {
     all: unset;
 }
 
-.home-content {
+.home-top-content1 {
     position: absolute;
 }
 
 @media only screen and (max-width:770px) {
 
-    .home-content {
+    .home-top-content1 {
         position: relative;
     }
 }
