@@ -215,7 +215,7 @@
 
            /* min-height: 700px !important; */
 
-            max-height: 600px !important;
+            min-height: 600px !important;
             height: max-content;
             
        }

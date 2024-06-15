@@ -60,7 +60,7 @@ p {
     background-color: #FFF7F1;
     min-height: 700px;
     border-radius: 15px;
-    margin: 8% auto 1%;
+    margin: 5% auto 2%;
     display: grid;
     max-width: 100% !important;
 }
@@ -75,6 +75,7 @@ hr {
 
 .Hire_Me, .Download_CV {
     width: 60%;
+    text-wrap:nowrap;
 }
 #Button {
     color: #FF3EA5;
@@ -392,6 +393,29 @@ iframe {
         font-size: small;
     }
 
+}
+
+/*    large screen   */
+
+@media only screen and (width > 1020px) {
+
+    .footer-icons{
+        /* bottom: -80px; */
+    /* position: relative; */
+    }
+
+    .home-top-content1 {
+        margin-top: 5px;
+    }
+    
+}
+
+/*    extra large screen  */
+
+@media only screen and (width > 1020px) {
+.home-top-content1 {
+    margin-top: 5% ;
+}
 }
 
 
