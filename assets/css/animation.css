@@ -231,21 +231,21 @@
     @media only screen and (max-width: 1000px) {
 
         #particles-js {
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
         }
      }
 
     @media only screen and (max-width: 970px) {
 
         #particles-js {
-            margin-bottom: 80px;
+            /* margin-bottom: 80px; */
         }
     }
 
       @media only screen and (max-width:770px) {
 
         #particles-js {
-            margin-bottom: 90px;
+            /* margin-bottom: 90px; */
         }
         
       }
@@ -253,7 +253,7 @@
       @media only screen and (max-width:760px) {
 
         #particles-js {
-            margin-bottom: 250px;
+            /* margin-bottom: 250px; */
         }
         
       }
@@ -261,7 +261,7 @@
       @media only screen and (max-width: 380px) {
 
         #particles-js {
-            margin-bottom: 300px;
+            /* margin-bottom: 300px; */
         }
 
       }
@@ -269,7 +269,7 @@
       @media only screen and (max-width:320px) {
 
         #particles-js {
-            margin-bottom: 320px;
+            /* margin-bottom: 320px; */
         }
         
       }

@@ -44,7 +44,7 @@ p {
      line-height: 1.7rem;
 }
 
-@media (width<=350px) {
+@media (width<=450px) {
     .background-body {
         width: fit-content;
     }
@@ -258,7 +258,7 @@ hr {
 @media (max-width: 600px ) {
 
     .home-top-content {
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
     }
 }
 
@@ -286,6 +286,49 @@ hr {
 .vr {
     height: 85%;
     align-self: center !important; /* Add this line to vertically center the.vr element */
+}
+
+ul.my-skills li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+ul.my-skills li img {
+    height: 30px;
+    transition: .8s;
+    text-align: center;
+}
+
+
+ul.my-skills li img:hover {
+transition: transform .5s;
+  width: 35px;
+  height: 35px;
+}
+
+ul.my-skills li span {
+    position: relative;
+    display: grid;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+    /* text-align: center; */
+    place-items:center;
+    /* transition: .6s; */
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+ul.my-skills li span:hover {
+      transform: translate(0, -15%);
+    transition: .7s;
+}
+
+@media only screen and (width < 760px) {
+
+    div.d-flex div.vr {
+        display: none !important;
+    }
 }
 
 /* ============================================================================================================ */
