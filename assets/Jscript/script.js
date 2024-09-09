@@ -55,8 +55,10 @@ window.addEventListener("resize", toggleClassBasedOnWidth);
 
 // AOS
   AOS.init({
+    offset: window.innerWidth < 768 ? 100 : 50, // Increase offset on mobile
     once: true,
-    mirror: false,
-    offset: 50, 
     duration: 600,
+    mirror: false,
+    disableMutationObserver: true,
   });
+
