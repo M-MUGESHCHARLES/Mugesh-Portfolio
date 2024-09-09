@@ -133,33 +133,6 @@ ul.navbar-nav li a.nav-link.active {
     }
 }
 
-/* ================================================== */
-
-#SVGT {
-    z-index: 1;
-}
-
-#SVGB {
-    z-index: 1;
-}
-
-@media screen and (width > 1020px) {
-    #SVGB {
-        top: -240px;
-    }
-}
-@media screen and (width < 700px) {
-    #SVGB {
-        top: -80px;
-    }    
-}
-
-@media screen and (min-width: 700px) and (max-width: 1020px) {
-    #SVGB {
-        top: -145px;
-    }    
-}
-
 /* ================================================== EducationAndSkills , MyWorks , GetInTouch sections SVG's */
 
 #EducationAndSkills {
