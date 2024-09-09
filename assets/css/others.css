@@ -1,0 +1,58 @@
+/* ========================================================= Hero  */
+
+.morph-blob {
+    min-width: 200px;
+    height: auto;
+    background-color: #793FDF;
+    border-radius:  30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: morphBorders 4s linear infinite;
+    overflow: hidden;
+}    
+
+@keyframes morphBorders {
+   0% , 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ; }
+
+   25% { border-radius: 70% 30% 31% 69% / 34% 23% 77% 66%  ;   }
+
+  50% { border-radius: 53% 47% 19% 81% / 59% 76% 24% 41%  ; }
+
+  75% { border-radius: 46% 54% 74% 26% / 73% 52% 48% 27% ;}
+}
+
+/* ========================================================= Get In Touch  */
+
+.wave {
+     place-items:  center;
+ }
+
+ .wave h2 {
+     font-size: 4em;
+ }
+
+ .wave h2:nth-child(1) {
+     color: transparent;
+     -webkit-text-stroke: 2px #793FDF;
+ }
+
+ .wave h2:nth-child(2) {
+     color: #793FDF;
+     animation: wave-text 4s ease-in-out infinite;
+ }
+
+ @keyframes wave-text {
+
+     0%,
+     100% {
+         clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%)
+     }
+
+     50% {
+         clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 40%, 100% 100%, 0% 100%)
+     }
+ }
+
+ @media only screen and (max-width: 500px) {
+     .wave h2 {
+         font-size: 3rem !important;
+     }
+ }

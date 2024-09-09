@@ -1,561 +1,361 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@400..800&display=swap') ; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@400..800&display=swap') ;
-
-  /* ==== Font family used ====
-
-     font-family: "Syne", sans-serif;
-     font-family: "Open Sans", sans-serif;
-     font-family: "Monda", sans-serif;
-  
-  */
-
-
-/* ============================================================================================================ */
-/*          universal        */
-/* ============================================================================================================ */
-
-h1,h4,h5,h6 {
-    color: #31363F;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600 !important;
-}
-p {
-    text-indent: 5%;
-
-    
-}
-.colortxt {
-    color: #793FDF;
-}
-.colortxt-2 {
-    color: #FF3EA5;
-}
-.colortxt-3 {
-    color:#7D7C7C;
+/* ================================================== FONTS */
+.OpenSans {
+      font-family: "Open Sans", sans-serif;
 }
 
-.background-body {
-    display: grid;
-     background-color: #793FDF;
-         padding: 0 15px;
-     letter-spacing: 0.7px;
-     line-height: 1.7rem;
+.Roboto {
+    font-family: "Roboto", sans-serif;
 }
 
-@media (width<=450px) {
-    .background-body {
-        width: fit-content;
-    }
+.RobotoSlab{
+  font-family: "Roboto Slab", serif;
 }
 
-@media (width<400px) {
-    .background-body {
-        padding: 0;
-    }
+.Poppins {
+  font-family: "Poppins", sans-serif;
 }
 
-.body-container {
-    background-color: #FFF7F1;
-    min-height: 700px;
-    border-radius: 15px;
-    margin: 5% auto 2%;
-    display: grid;
-    max-width: 100% !important;
+/* ================================================== Universal */
+
+body {
+    background-color: #793FDF !important;
 }
 
-hr {
-    margin: 30px 50px !important;
+#main nav{
+    background-color: transparent;
 }
 
-/* ============================================================================================================ */
-/*           Buttons        */
-/* ============================================================================================================ */
-
-.Hire_Me, .Download_CV {
-    width: 60%;
-    text-wrap:nowrap;
+#main #main_div,
+#main #Hero,
+#main #WaveTop, 
+#main #WaveBottom,
+#main #MyWorks,
+#main #GetInTouch,
+#main #AmimatedWaveBottom
+{
+    background-color: #F6F5F2;
 }
-#Button {
+
+.c1 { color: #793FDF;}
+
+.c2 {color: #FF3EA5;}
+
+.c3 {color:#7D7C7C;}
+
+.c4 {color: #31363F;}
+
+/* ================================================== Buttons  */
+
+#Button_1 {
     color: #FF3EA5;
     border: 2px solid #864AF9;
-    margin: 20px 0;
     background-color: #FFF7F1;
-    /* filter: drop-shadow(3px 3px 0px #240A34); */
 }
-#Button:hover {
+#Button_1:hover {
     background-color: #793FDF;
     color: #FFF7F1;
     filter: drop-shadow(3px 3px 0px #240A34);
 }
-#Button:active , #Button-2:active {
-    transform: scale(.96);
-}
 
-#Button-2 {
+#Button_2 {
     color: #FFF7F1;
-    /* border: 2px solid #FF3EA5; */
-    margin: 10px 10px;
     background-color: #864AF9;
-    /* filter: drop-shadow(3px 3px 0px #240A34); */
 }
-#Button-2:hover {
+#Button_2:hover {
     background-color: #FFF7F1;
     border: 2px solid #793FDF;
     color: #FF3EA5;
     filter: drop-shadow(3px 3px 0px #240A34);
 }
 
-
-/* ============================================================================================================ */
-/*           footer-icons         */
-/* ============================================================================================================ */
-
-.icons {
-    text-decoration: none;
-    margin: 0 25px;
-    /* color: #7D7C7C; */
-    font-size: 1.2rem;
+#Button_1:active ,
+#Button_2:active {
+    transform: scale(.96);
 }
 
-.icons:hover {
-    color: #793FDF;
+/* ================================================== Headings underline */
+
+.Heading {
+  position: relative;
+  display: inline-block; 
 }
 
-.footer-icons {
-    margin: 25px auto 15px auto !important;
-    display: flex;
-    justify-content: center;
+.Heading:after {
+  content: "";
+  position: absolute;
+  background-color: #e49bff; 
+  height: 3px;           
+  width: 80%;           
+  bottom: -6px;         
+  left: 0;              
 }
 
-.address-icons {
-    filter: drop-shadow(3px 3px 0px #240A34);
+/* ================================================== Header Section */
+
+nav {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);             
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease; 
 }
 
-
-/*  ============================================================================================================  */
-/*           navigation bar     */
-/*  ============================================================================================================  */
-
-.nav-link {
-    position: relative;
-    display: inline-block;
-    margin: 0 20px;
-
-    font-family: "Open Sans", sans-serif;
+ul.navbar-nav li a.nav-link {
+    color: #7D7C7C;
+    font-weight: 600;
 }
 
-.nav-link.active  {
-    color:#793FDF !important;
-    text-transform: uppercase !important;
-    font-weight: bold;
-
-    font-family: "Open Sans", sans-serif;
+ul.navbar-nav li a.nav-link:hover {
+    color: #864AF9;
 }
 
-.nav-link:hover {
-    color: rebeccapurple !important;
+ul.navbar-nav li a.nav-link.active {
+    color:#FF3EA5;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: large;
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rebeccapurple;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease;
-}
+/* ================================================== Hero Section */
 
-.nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
-}
-
-.navbar-brand {
-    margin-left: 10%;
-    margin-right: 30% !important;
-    color: #793FDF  !important;
-
-        font-family: "Syne", sans-serif; 
-        font-weight: 400;
-        font-style: normal;    
-}
-
-.navbar {
-        flex-wrap: wrap;
-        align-content: flex-start;
-        padding: 20px 0 0 !important;
-        height: max-content;
-}
-
-
-/* ============================================================================================================ */
-/*       index.html    */
-/* ============================================================================================================ */
-
-
-.home-content-1{
-    padding: 45px 45px 0 !important;
-    text-wrap: balance;
-    
-}
-
-.home-content-2 { 
-    display: grid;
-    place-items: center;
-    padding: 15px;
-}
-
-.profile-img {
-    position: relative;
-        /* top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-         width: 150px;
-        height: auto;
-        left: 35px;
+#Hero_img {
+    width: 150px;
     filter: drop-shadow(10px 1px 5px #240A34);
 }
 
-.home-container-2 {
-    text-align: center;
-}
-
-.download-link {
-    all: unset;
-}
-
-.home-top-content1 {
+@media screen and (width > 1020px) {
+    .morph-blob {
     position: absolute;
-}
-
-@media only screen and (max-width:1020px) {
-
-    .home-top-content1 {
-        position: relative;
     }
 }
 
- .home-contents-container {
-    display: flex;
-    flex-direction: column;
+/* ================================================== */
+
+#SVGT {
+    z-index: 1;
 }
 
-.home-top-content,
-.home-bottom-content {
-    width: 100%;
-} 
+#SVGB {
+    z-index: 1;
+}
 
-.home-top-content {
-    margin-bottom: 20px;
-} 
-
-@media (max-width: 600px ) {
-
-    .home-top-content {
-        /* margin-bottom: 90px; */
+@media screen and (width > 1020px) {
+    #SVGB {
+        top: -240px;
     }
 }
-
-
-/* ============================================================================================================ */
-/*       skills.html       */
-/* ============================================================================================================ */
-
-.progress-bar {
-    background-color: #A076F9 !important;
+@media screen and (width < 700px) {
+    #SVGB {
+        top: -80px;
+    }    
 }
 
-.skills-content-1 {
-    padding: 0 30px;
+@media screen and (min-width: 700px) and (max-width: 1020px) {
+    #SVGB {
+        top: -145px;
+    }    
 }
 
-.skills-content-2 {
-    padding: 0 15px;
+/* ================================================== EducationAndSkills , MyWorks , GetInTouch sections SVG's */
+
+#EducationAndSkills {
+    background-color: #793FDF;
+    color: #FFF7F1;
 }
 
-.progress {
-    height: 10px !important;
+#Education div.shapes::before,
+#Education div.shapes::after,
+#Education div.shapes2::before,
+#Education div.shapes2::after,
+#MyWorks div.shapes3::before,
+#MyWorks div.shapes3::after,
+#MyWorks div.shapes4::before,
+#MyWorks div.shapes4::after
+ {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat; 
+    z-index: 1;
+    opacity:80%;
 }
 
-.vr {
-    height: 85%;
-    align-self: center !important; /* Add this line to vertically center the.vr element */
+#Education div.shapes::before {
+  top: -20px;
+  left: -20px;
+  width: 50px; 
+  height: 50px; 
+  background-image: url('../images//images/svg2.svg'); 
+  background-size: contain; 
+  background-position:top left; 
 }
 
-ul.my-skills li {
-    list-style: none;
-    margin: 0 15px;
-    padding: 0;
-}
-
-ul.my-skills li img {
+#Education div.shapes::after {
+  transform: scaleX(-1);
+  top: -25px;
+    left: 13px;
+    width: 30px;
     height: 30px;
-    width: auto;
-    transition: transform .5s;
-    transition: .8s;
-    text-align: center;
+  background-image: url('../images/images/svg1.svg'); 
+  background-size: contain; 
+  background-position:top left; 
 }
 
-
-ul.my-skills li span:hover img {
-  width: 35px;
-  height: 35px;
+#Education h2 , 
+#MyWorks div:nth-child(2)  
+{
+    z-index: 3;
 }
 
-ul.my-skills li span {
+#Education div.shapes2::before {
+  background-image: url('../images//images/svg2.svg'); 
+  background-size: contain; 
+  right: 25px;
+    top: -12px;
+    width: 60px;
+    height: 60px;
+}
+
+#Education div.shapes2::after {
+     transform: scaleX(-1);
+  background-image: url('../images//images//svg1.svg'); 
+  background-size: contain; 
+  right: -30px;
+    width: 100px;
+    height: 100px;
+}
+
+#MyWorks div.shapes3::before {
+    background-image: url('../images//images//svg2.svg');
+        top: -38px;
+    left: -48px;
+    background-size: contain;
+    background-position: top left;
+    width: 160px;
+    height: 160px;
+    opacity: 60%;
+}
+
+#MyWorks div.shapes3::after {
+     transform: scaleX(-1);
+  background-image: url('../images/images/svg1.svg'); 
+  background-size: contain; 
+  left: 50px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    opacity: 60%;
+}
+
+#MyWorks div.shapes4::before {
+  background-image: url('../images//images/svg2.svg'); 
+  background-size: contain; 
+  right: 15px;
+    top: -12px;
+    width: 60px;
+    height: 60px;
+    opacity: 60%;
+}
+
+#MyWorks div.shapes4::after {
+     transform: scaleX(-1);
+  background-image: url('../images//images//svg1.svg'); 
+  background-size: contain; 
+  right: -40px;
+    width: 100px;
+    height: 100px;
+    opacity: 60%;
+
+}
+
+#MyWorks #ShowCase::-webkit-scrollbar {
+    display: none;
+}
+
+/* =================================================== Wave Section */
+
+#WaveTop , 
+#WaveBottom ,
+#AnimatedWaveBottom
+{
     position: relative;
-    display: grid;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    /* text-align: center; */
-    place-items:center;
-    /* transition: .6s; */
-    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    padding: 50px 0; 
 }
 
-ul.my-skills li div.others {
-    background-color: #fff;
-    text-align: center;
-    width: max-content;
-    height: max-content;
-    padding: 3px 6px;
-    box-shadow: 0 5px 4px rgba(0,0,0,.5);
-    font-weight: 600; 
-    text-wrap:nowrap;
-}
-
-ul.my-skills li div.others img{
-    height: 20px;
-    width:auto;
-}
-
-
-ul.my-skills li span:hover {
-    transform: translate(0, -12%);
-    transition: 0.3s;
-}
-
-@media only screen and (width < 760px) {
-
-    div.d-flex div.vr {
-        display: none !important;
-    }
-}
-
-/* ============================================================================================================ */
-/*       contacts.html      */
-/* ============================================================================================================ */
-
-.wave {
-    /* filter: drop-shadow(5px 4px 2px #240A34); */
-}
-
-.contacts-container-1 {
-    margin: 20px 0 10px;
-}
-
-.contacts-container-2 {
-    padding: 45px 5px 0 !important;
-    margin-top: 20px;
-}
-
-.contacts-content-1, .contacts-content-2, .contacts-content-3 {
-    display: grid;
-}
-
-.contacts-content-1 {
-    justify-content: center;
-    align-content: end;
-    margin-top: 10px;
-}
-
-.contacts-content-2 {
-    place-items: center;
-}
-
-.contacts-content-3{
-    justify-content: left;
-}
-
-.contacts-info td {
-    padding: 10px;
-}
-
-iframe {
-    filter: drop-shadow(5px 5px 6px #240A34);
-}
-
-/* ============================================================================================================ */
-/*           projects.html           */
-/* ============================================================================================================ */
-
-/* .projects-container-1 {
-     margin-top: 30px;
-     margin-bottom: 10px;
-}
-
-.projects-container-1 .card {
-    border: 3px solid #793FDF;
-    border-radius: 10px;
-    position: relative;  
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.card image {
-background-repeat:no-repeat;
-  background-size:cover;
-  filter:contrast(.7) brightness(.7);
-  }
-  
-  .card .card-header {
-      max-width: 300px;
-      max-height: 250px;
-      background-size: cover;
-      overflow: hidden;
-      }
-
-@media (max-width: 600px) {
-   .projects-container-1 .card {
-    max-width: 100%;
-  }
-} */
-
-.projects-container-1 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.projects-container-1 .card {
-    border: 3px solid #793FDF;
-    border-radius: 10px;
-    position: relative;  
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden; /* Ensures the image overflow is hidden */
-}
-
-.card .card-header {
-    position: relative;
-    max-width: 300px;
-    max-height: 250px;
-    overflow: hidden; /* Ensures the image overflow is hidden */
-}
-
-.card .card-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(50%);
-    transition: transform 0.3s ease; /* Adds a smooth transition effect for zoom */
-}
-
-.card:hover img {
-    transform: scale(1.1); /* Zooms in the image on hover */
-    filter: grayscale(10%);
-
-}
-
-.card .card-header .card-title {
+#WaveTop::before,
+#WaveBottom::after,
+#AnimatedWaveBottom::before
+{
+    content: "";
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 0;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 5px;
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: 1; 
 }
 
-.card .card-body {
-    padding: 15px;
-    box-sizing: border-box;
+#WaveTop::before {
+  top: 0;
+  background-image: url('../images/images/layered_WaveTop.svg');
 }
 
-@media (max-width: 600px) {
-    .projects-container-1 .card {
-        max-width: 100%;
+#WaveBottom::after {
+    bottom: 0;
+    background-image: url('../images/images/wave-haikei.svg');
+}
+
+#AnimatedWaveBottom::before {
+    bottom: -30px;
+    left: 0;
+    background-position: top !important;
+    background-image: url('../images/images/AnimatedWaveBottom.svg');
+}
+
+@media screen and (width > 1020px) {
+    #AnimatedWaveBottom::before {
+        bottom: -25px;
+        height: 145px;
     }
 }
 
+/* =================================================== MyWorks */
 
-/* ============================================================================================================ */
-/*          Responsive styles         */
-/* ============================================================================================================ */
-
-/*  mobile view  */
-
-@media only screen and (max-width: 500px) {
-    
-    .contacts-content-3 {
-        visibility: hidden;
-    }
-
-    .contacts-container-1 {
-        margin-top: 60px;
-    }
-
-    .contacts-container-2 {
-        margin-top: 30px;
-    }
-    
-    .contacts-info td {
-        padding:10px 0 !important;
-    }
-
-    .navbar {
-        margin-bottom: 15px;
-    }
-
-   .vr {
-    display: none !important;
-   }
-    
+#MyWorks div.card-header{
+    width: 100% !important;
+    height:auto !important;
 }
-
-/*    small screen   */
-
-@media only screen and (max-width: 360px) {
-
-    .contacts-info {
-        font-size: small;
-    }
-
+#MyWorks div.card-header img {
+    object-fit: cover;
 }
-
-/*    large screen   */
-
-@media only screen and (width > 1020px) {
-
-    .footer-icons{
-        /* bottom: -80px; */
-    /* position: relative; */
-    }
-
-    .home-top-content1 {
-        margin-top: 5px;
-    }
-    
+#MyWorks div.card {
+    border-color: #793FDF;
 }
-
-/*    extra large screen  */
-
-@media only screen and (width > 1020px) {
-.home-top-content1 {
-    margin-top: 5% ;
-}
+#MyWorks div.card-footer a{
+    text-decoration: none;
 }
 
 
+/* =================================================== Hero , GetInTouch  social icons*/
 
+#GetInTouch button{
+    color: #e49bff;
+}
+
+#Hero div div:nth-child(4) div a,
+#GetInTouch div:nth-child(2) div a{
+    color: #793FDF !important;
+    z-index: 2;
+}
+
+#Hero div div:nth-child(4) div a:hover ,
+#GetInTouch div:nth-child(2) div a:hover
+{
+    color: #e49bff !important;
+}
 
 
