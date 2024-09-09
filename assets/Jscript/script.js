@@ -55,6 +55,8 @@ window.addEventListener("resize", toggleClassBasedOnWidth);
 
 // AOS
   AOS.init({
-   once:true,
-   mirror:false,
+    once: true,
+    mirror: false,
+    offset: 50, 
+    duration: 600,
   });
