@@ -44,28 +44,48 @@ toggleClassBasedOnWidth();
 window.addEventListener("resize", toggleClassBasedOnWidth);
 
 // AOS
-function initializeAOS() {
-  if (window.innerWidth >= 768) {
-    // Initialize AOS with a slight delay to ensure full rendering
-    setTimeout(() => {
-      AOS.init({
-        once: true,
-        mirror: false,
-        offset: 50,
-        duration: 600,
-      });
-    }, 100); // Delay initialization slightly
-  } else {
-    AOS.refresh(); // Refresh AOS if it was previously initialized
-    AOS.remove(); // Remove AOS animations if the screen is too small
-  }
+
+if (window.innerWidth < 768) {
+  AOS.init({
+    disable: false,
+    duration: 500,
+    once: true,
+  });
+} else {
+  AOS.init({
+    disable: false,
+    duration: 1000,
+    once: false,
+    mirror:true,
+  });
 }
 
-// Initialize AOS on page load
-window.addEventListener("load", initializeAOS);
 
-// Add event listener for window resize
-window.addEventListener("resize", initializeAOS);
+// AOS.init({
+//    once:false,
+//    disable:'mobile',
+//    mirror:true,
+//    offset:200,
+//    duration:500,
+// })
+
+// function initializeAOS() {
+//   if (window.innerWidth >= 768) {
+//     setTimeout(() => {
+//       AOS.init({
+//         once: true,
+//         mirror: false,
+//         offset: 50,
+//       //   duration: 600,
+//       });
+//     }, 100); 
+//   } else {
+//     AOS.refresh(); 
+//     AOS.remove(); 
+//   }
+// }
+// window.addEventListener("load", initializeAOS);
+// window.addEventListener("resize", initializeAOS);
 
 
 //   function initializeAOS() {

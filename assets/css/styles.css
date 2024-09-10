@@ -19,6 +19,10 @@
 
 /* ================================================== Universal */
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
     background-color: #793FDF !important;
 }
@@ -99,7 +103,7 @@ nav {
     -webkit-backdrop-filter: blur(10px);  
     backdrop-filter: blur(10px);             
     position: sticky;
-    top: 0;
+    /* top: 0; */
     z-index: 10;
     transition: background-color 0.3s ease; 
 }
