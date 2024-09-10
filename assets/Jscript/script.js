@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   const observerOptions = {
     root: null,
-    threshold: 0.7, 
+    threshold: 0.3, 
   };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -44,21 +44,25 @@ toggleClassBasedOnWidth();
 window.addEventListener("resize", toggleClassBasedOnWidth);
 
 // AOS
-
+function initializeAOS() {
 if (window.innerWidth < 768) {
   AOS.init({
-    disable: false,
-    duration: 500,
+    disable: true,
+    duration: 200,
     once: true,
-  });
+   });
 } else {
-  AOS.init({
-    disable: false,
-    duration: 1000,
-    once: false,
-    mirror:true,
+   AOS.init({
+      disable: false,
+      once: false,
+      mirror:true,
   });
+    AOS.refresh(); 
+    AOS.remove(); 
+  }
 }
+window.addEventListener("load", initializeAOS);
+window.addEventListener("resize", initializeAOS);
 
 
 // AOS.init({
@@ -68,6 +72,7 @@ if (window.innerWidth < 768) {
 //    offset:200,
 //    duration:500,
 // })
+// =========================================
 
 // function initializeAOS() {
 //   if (window.innerWidth >= 768) {
@@ -87,6 +92,7 @@ if (window.innerWidth < 768) {
 // window.addEventListener("load", initializeAOS);
 // window.addEventListener("resize", initializeAOS);
 
+// ============================================
 
 //   function initializeAOS() {
 //     if (window.innerWidth >= 768) {
