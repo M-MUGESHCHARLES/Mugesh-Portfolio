@@ -29,19 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 8000);  
 }
 
-// ShowCase
-function toggleClassBasedOnWidth() {
-  const element = document.getElementById("ShowCase"); 
-  if (window.innerWidth < 768) {
-     element.classList.add("row");
-     element.classList.remove("d-flex ", "flex-row", "overflow-x-scroll");
-  } else if (window.innerWidth >= 768) {
-   element.classList.add("d-flex", "flex-row", "overflow-x-scroll");
-   element.classList.remove("row");
-  }
-}
-toggleClassBasedOnWidth();
-window.addEventListener("resize", toggleClassBasedOnWidth);
+// // ShowCase
+// function toggleClassBasedOnWidth() {
+//   const element = document.getElementById("ShowCase"); 
+//   if (window.innerWidth < 768) {
+//      element.classList.add("row");
+//      element.classList.remove("d-flex ", "flex-row", "overflow-x-scroll");
+//   } else if (window.innerWidth >= 768) {
+//    element.classList.add("d-flex", "flex-row", "overflow-x-scroll");
+//    element.classList.remove("row");
+//   }
+// }
+// toggleClassBasedOnWidth();
+// window.addEventListener("resize", toggleClassBasedOnWidth);
 
 // AOS
 function initializeAOS() {
