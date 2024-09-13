@@ -57,31 +57,9 @@
         <nav class="navbar navbar-expand-lg px-4 position-sticky">
           <div class="container-fluid">
             <a class="Poppins fw-semibold ms-4 navbar-brand text-secondary" href="#">MUGESH MANOHARAN</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbar"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title Poppins fw-semibold ms-4 text-secondary" id="offcanvasNavbarLabel">
-                  Mugesh Manoharan
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 d-none d-lg-flex">
                   <li class="nav-item">
                     <a class="nav-link link-offset-3" href="#Hero"> About </a>
                   </li>
@@ -95,10 +73,10 @@
                     <a class="nav-link link-offset-3" href="#GetInTouch"> Contact </a>
                   </li>
                 </ul>
-              </div>
-            </div>
           </div>
         </nav>
+
+        <!--Tab view -->
 
         <div class="d-none d-md-block m-0 p-0">
           <section class="px-5 pt-5" id="Hero">
@@ -827,7 +805,7 @@
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                         >
-                          MERN
+                          MERN-Stack
                         </h6>
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
@@ -1016,9 +994,9 @@
                   <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 mt-5 position-relative Roboto "
                     data-aos="fade-left" data-aos-delay="700" data-aos-duration="600">
                   I'm always open to connecting with like-minded individuals and exploring new opportunities.</p>
-                  <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-bold py-3 px-5 fs-5" id="Button_1" 
-                      href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail">
-                      Send a Mail <span class="bi mb-2"><i class="fa-solid fa-envelope fs-4 ms-1"></i></span>
+                  <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-semibold px-3 py-1 fs-5" id="Button_1" 
+                      data-bs-toggle="modal" data-bs-target="#Form">
+                      Get in Touch <span class="bi mb-2"><i class="fa-solid fa-envelope ms-1"></i></span>
                   </button>
               </div>
               <div class="col-12 pt-3">
@@ -1041,6 +1019,8 @@
               </div>
           </section>
         </div>
+
+        <!-- mobile view  AOS is not working in the mobile view hence seperate lines of code has been created for mobile view -->
 
         <div class="d-block d-md-none m-0 p-0">
           <section class="px-5 pt-5" id="Hero">
@@ -1426,7 +1406,7 @@
                     <h5 class="card-title OpenSans fw-semibold mb-3">CURD Application</h5>
                     <div class="Poppins">
                       <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        MERN
+                        MERN-Stack
                       </h6>
                       <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
                         React Js
@@ -1543,9 +1523,9 @@
               </div>
               <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 mt-5 position-relative Roboto " >
                 I'm always open to connecting with like-minded individuals and exploring new opportunities.</p>
-              <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-bold py-3 px-5 fs-5"
-                id="Button_1" href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail">
-                Send a Mail <span class="bi mb-2"><i class="fa-solid fa-envelope fs-4 ms-1"></i></span>
+              <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-semibold px-3 py-1 fs-5"
+                id="Button_1" data-bs-toggle="modal" data-bs-target="#Form">
+                Get in Touch <span class="bi mb-2"><i class="fa-solid fa-envelope ms-1"></i></span>
               </button>
             </div>
             <div class="col-12 pt-3">
@@ -1570,6 +1550,56 @@
         <section id="AnimatedWaveBottom" class="p-0 pt-3 pt-lg-2"></section>
 
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade " id="Form" tabindex="-1" >
+        <div class="modal-dialog">
+          <div class="modal-content border rounded-3 border-1 border-secondary">
+            <div class="modal-header bg-body-secondary">
+              <h1 class="modal-title fs-5 c1 fw-bold" id="Label">Get In Touch</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="border border-warning modal-body p-4 rounded ">
+              
+              <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <fieldset>
+                  <input type="hidden" name="access_key" value="cfe05258-845a-4786-b6d6-d3b3527ea23b" />
+                  <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                  <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                  <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                  <div class="py-2">
+                    <label class="fw-semibold text-warning" for="name">Full Name</label><br />
+                    <input  class="w-75 rounded border border-secondary border-2" type="text" name="name" id="name" placeholder="Your Name" required />
+                    
+                  </div>
+                  <div class="py-2">
+                    <label class="fw-semibold text-warning" for="email">Email Address</label><br />
+                    <input  class="w-75 rounded border border-secondary border-2" type="email" name="email" id="email" placeholder="you@company.com" required />
+                  </div>
+                  <div class="py-2">
+                    <label class="fw-semibold text-warning" for="phone">Phone Number</label>
+                    <br />
+                    <input  class="w-75 rounded border border-secondary border-2" type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required />
+                  </div>
+                  <div class="py-2">
+                    <label class="fw-semibold text-warning" for="message">Your Message</label>
+                    <br />
+                    <textarea class="w-100 rounded border border-secondary border-2"  rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                  </div>
+              
+                  <button class="px-3 py-1 rounded" type="submit" data-bs-dismiss="modal" id="Button_2" >Send Message</button>
+                </fieldset>
+              </form>
+
+            </div>
+            <!-- <div class="modal-footer bg-body-secondary">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" >Send a Mail</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
     </section>
 
     
