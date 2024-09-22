@@ -75,3 +75,196 @@
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
+
+/* 
+.fish-container {
+    position: absolute;
+    top: 10%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  z-index: 1;
+}
+.fish {
+  position: absolute;
+  opacity: 0.7;
+  width: 50px;
+  height: auto;
+  animation: swim 10s infinite linear;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-100px); 
+  }
+  100% {
+    transform: translateX(100vw); 
+  }
+}
+*/  
+/* .fish:nth-child(1) {
+  top: 5%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+} */
+/*
+ .fish1,
+ .fish2,
+ .fish3,
+ .fish4,
+ .fish5,
+ .fish6 {
+  animation: bounce 2s infinite;
+}
+
+ #fish2{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+ #fish3{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+ #fish4{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+} */
+
+/* ==================== */
+
+/*
+.fish-container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fish {
+  position: absolute;
+  opacity: 0.7;
+  width: 50px;
+  height: auto;
+  animation: swim 10s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-100px); 
+  }
+  100% {
+    transform: translateX(100vw); 
+  }
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0); 
+  }
+  25% {
+    transform: translateY(-5px); 
+  }
+  75% {
+    transform: translateY(-3px); 
+  }
+}
+
+.fish1 {
+    top: 10%;
+  animation-duration: 10s, 2.5s;
+}
+
+.fish2 {
+    top: 20%;
+  animation-duration: 8s, 2s;
+}
+
+.fish3 {
+    top: 22%;
+  animation-duration: 12s, 3s;
+}
+
+.fish4 {
+    top: 25%;
+  animation-duration: 9s, 2.2s;
+}
+*/
+
+
+/* ==================================== */
+
+.fish-container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fish  {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  opacity: 0.7;
+  animation: swim 10s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+/* Swimming from left to right */
+@keyframes swim {
+  0% {
+    transform: translate(-100px, 0); /* Start off-screen on the left */
+  }
+  100% {
+    transform: translate(100vw, 0); /* End off-screen on the right */
+  }
+}
+
+/* Bouncing up and down */
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translate(0, 0); /* Default position */
+  }
+  25% {
+    transform: translate(0, -5px); /* Move up slightly */
+  }
+  75% {
+    transform: translate(0, -3px); /* Move up slightly less */
+  }
+}
+
+/* Optional: Adjust timing for different fish */
+.fish1 {
+  animation-duration: 10s, 2.5s;
+}
+
+.fish2 {
+  animation-duration: 8s, 2s;
+}
+
+.fish3 {
+  animation-duration: 12s, 3s;
+}
+
+.fish4 {
+  animation-duration: 9s, 2.2s;
+}
