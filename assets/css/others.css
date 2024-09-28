@@ -58,6 +58,18 @@
      }
  }
 
+ .Shake {
+ animation: tilt-shaking 1s infinite;
+}
+
+ @keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
 /* ========================================================= Skills  */
 
 
@@ -221,12 +233,41 @@
   z-index: 1;
 }
 
-.fish  {
+.fish-o1 , .fish-o2, .fish-o3 , .fish-o4 {
   position: absolute;
-  width: 50px;
+  animation: bounce 5s infinite ease-in-out;
+}
+
+.fish1 , .fish2 , .fish3 , .fish4 {
+  position: absolute;
+  animation: swim 20s infinite linear  ;
   height: auto;
-  opacity: 0.7;
-  animation: swim 10s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+.fish1  {
+  width: 50px;
+  opacity: 0.7; 
+}
+
+.fish2 {
+  width: 60px;
+  left: 30px;
+  top: 15px;
+  opacity: 0.8;
+}
+
+.fish3 {
+  width: 40px;
+  left: 15px ;
+  top:45px ;
+  opacity: 0.8;
+}
+
+.fish4 {
+width: 70px;
+    left: -25px;
+    top: 45px;
+    opacity: 0.7;
 }
 
 /* Swimming from left to right */
@@ -245,26 +286,26 @@
     transform: translate(0, 0); /* Default position */
   }
   25% {
-    transform: translate(0, -5px); /* Move up slightly */
+    transform: translate(0, -10px); /* Move up slightly */
   }
   75% {
-    transform: translate(0, -3px); /* Move up slightly less */
+    transform: translate(0, -7px); /* Move up slightly less */
   }
 }
 
 /* Optional: Adjust timing for different fish */
-.fish1 {
+.fish-o1 , .fish1 {
   animation-duration: 10s, 2.5s;
 }
 
-.fish2 {
+.fish-o2 , .fish2 {
   animation-duration: 8s, 2s;
 }
 
-.fish3 {
+.fish-o3 , .fish3 {
   animation-duration: 12s, 3s;
 }
 
-.fish4 {
+.fish-o4 , .fish4 {
   animation-duration: 9s, 2.2s;
-}
+}  

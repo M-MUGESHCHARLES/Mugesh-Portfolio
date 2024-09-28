@@ -54,7 +54,7 @@ if (window.innerWidth < 768) {
 } else {
    AOS.init({
       disable: false,
-      once: false,
+      once: true,
       mirror:true,
   });
     AOS.refresh(); 
@@ -64,48 +64,3 @@ if (window.innerWidth < 768) {
 window.addEventListener("load", initializeAOS);
 window.addEventListener("resize", initializeAOS);
 
-
-// AOS.init({
-//    once:false,
-//    disable:'mobile',
-//    mirror:true,
-//    offset:200,
-//    duration:500,
-// })
-// =========================================
-
-// function initializeAOS() {
-//   if (window.innerWidth >= 768) {
-//     setTimeout(() => {
-//       AOS.init({
-//         once: true,
-//         mirror: false,
-//         offset: 50,
-//       //   duration: 600,
-//       });
-//     }, 100); 
-//   } else {
-//     AOS.refresh(); 
-//     AOS.remove(); 
-//   }
-// }
-// window.addEventListener("load", initializeAOS);
-// window.addEventListener("resize", initializeAOS);
-
-// ============================================
-
-//   function initializeAOS() {
-//     if (window.innerWidth >= 768) {
-//       AOS.init({
-//         once: true,
-//         mirror: false,
-//         offset: 50,
-//         duration: 600,
-//       });
-//     } else {
-//       AOS.refresh(); // Refresh AOS if it was previously initialized
-//       AOS.remove(); // Remove AOS animations if the screen is too small
-//     }
-//   }
-//   initializeAOS();
-//   window.addEventListener("resize", initializeAOS);
