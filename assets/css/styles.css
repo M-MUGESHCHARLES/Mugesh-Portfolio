@@ -161,6 +161,20 @@ ul.navbar-nav li a.nav-link.active {
     color: #FFF7F1;
 }
 
+#Education {
+}
+
+@media screen and (width < 600px) {
+    #Education-Img {
+        position: relative;
+        left: -20px;
+    }
+    #Education-Year {
+        position: relative;
+        right: -20px;
+    }
+}
+
 #Education div.shapes::before,
 #Education div.shapes::after,
 #Education div.shapes2::before,
@@ -220,6 +234,7 @@ ul.navbar-nav li a.nav-link.active {
   right: -30px;
     width: 100px;
     height: 100px;
+    z-index: 5;
 }
 
 #MyWorks div.shapes3::before {
@@ -340,14 +355,14 @@ ul.navbar-nav li a.nav-link.active {
 
 #Hero div div:nth-child(4) div a,
 #GetInTouch div:nth-child(2) div a{
-    color: #793FDF !important;
+    color: #758694 !important;
     z-index: 2;
 }
 
 #Hero div div:nth-child(4) div a:hover ,
 #GetInTouch div:nth-child(2) div a:hover
 {
-    color: #e49bff !important;
+    color: #793FDF !important;
 }
 
 
