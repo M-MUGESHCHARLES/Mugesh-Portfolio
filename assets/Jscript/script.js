@@ -64,3 +64,29 @@ if (window.innerWidth < 768) {
 window.addEventListener("load", initializeAOS);
 window.addEventListener("resize", initializeAOS);
 
+// ===============================================
+
+document.getElementsByClassName("TabHead")[0].classList.add("active");
+document.getElementsByClassName("TabContent")[0].classList.remove("d-none");
+document.getElementsByClassName("TabContent")[0].classList.add("d-block");
+
+function setActiveTab(event, contentId) {
+  var i, tabHeader, tabContent;
+  // Remove 'active' class from all tab headers
+  tabHeader = document.getElementsByClassName("TabHead");
+  for (i = 0; i < tabHeader.length; i++) {
+    tabHeader[i].classList.remove("active");
+  }
+
+  // Hide all tab content by adding 'd-none'
+  tabContent = document.getElementsByClassName("TabContent");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].classList.add("d-none");
+  }
+
+  // Display the selected tab content
+  document.getElementById(contentId).classList.remove("d-none");
+  document.getElementById(contentId).classList.add("d-block");
+  // Add 'active' class to the clicked tab header
+  event.currentTarget.classList.add("active");
+}

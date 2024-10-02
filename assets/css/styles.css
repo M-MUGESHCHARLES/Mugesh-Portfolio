@@ -161,7 +161,8 @@ ul.navbar-nav li a.nav-link.active {
     color: #FFF7F1;
 }
 
-#Education {
+#Education div.custom-fs p {
+    font-size: 0.8rem;
 }
 
 @media screen and (width < 600px) {
@@ -283,6 +284,37 @@ ul.navbar-nav li a.nav-link.active {
 #MyWorks #ShowCase::-webkit-scrollbar {
     display: none;
 }
+
+.Skills-Tab {
+background-color: inherit;
+border: 2px solid #e49bff;
+}
+.Skills-Tab button {
+background-color: inherit;
+border: none;
+font-weight: 500;
+color: #e49bff;
+transition: background-color 0.3s ease, color 0.3s ease, border 0.5s ease; 
+}
+.Skills-Tab button:hover {
+color: #FF3EA5; 
+border: 2px solid #FF3EA5; 
+}
+.Skills-Tab button.active {
+border: 2px solid #FF3EA5 !important;
+font-weight: bold;
+color: #e49bff !important;
+background-color: #F6F5F2 !important;
+transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; 
+}
+
+.TabContent div div img {
+    transition: transform 0.3s ease-in-out;
+}
+.TabContent div div img:hover  {
+        transform: scale(1.1);
+}
+
 
 /* =================================================== Wave Section */
 
