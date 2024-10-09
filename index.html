@@ -46,8 +46,9 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <!-- AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
   </head>
 
@@ -56,7 +57,7 @@
       <div class="mx-auto m-0 p-0 py-4 rounded-4 " id="main_div">
         <nav class="navbar navbar-expand-lg px-4 position-sticky">
           <div class="container-fluid">
-            <a class="Poppins fw-semibold ms-4 navbar-brand text-secondary" href="#">MUGESH MANOHARAN</a>
+            <a class="Norican fw-bold ms-4 navbar-brand text-secondary" href="#">Mugesh Manoharan</a>
             
 
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 d-none d-lg-flex">
@@ -77,17 +78,16 @@
           </div>
         </nav>
 
-        <!--Tab view -->
 
-        <div class="d-none d-md-block m-0 p-0">
+        <div class=" m-0 p-0">
           <section class="px-5 pt-5" id="Hero">
             <div class="container m-0 p-0 row mx-auto">
-              <div class="col-12 col-md-10 col-lg-9 mx-auto p-0 pe-lg-5">
-                <h4 class="fw-medium Roboto" data-aos="fade-right" data-aos-duration="500" >Hi, I'm</h4>
-                <h1 class="OpenSans fw-semibold" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600">
+              <div class="col-12 col-md-10 col-lg-9 mx-auto p-0 pe-lg-5 Hero__Left">
+                <h4 class="fw-medium Roboto" >Hi, I'm</h4>
+                <h1 class="OpenSans fw-semibold Hero__Name"  >
                   <span class="c1"> Mugesh </span> Manoharan
                 </h1>
-                <h5 class="pt-2 m-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                <h5 class="pt-2 m-0 Hero__Intrests" >
                   <p
                     href=""
                     class="typewrite c2 font-monospace fw-semibold"
@@ -98,29 +98,26 @@
                   </p>
                 </h5>
   
-                <p class="text-secondary pe-lg-5 Roboto" data-aos="fade-right" data-aos-delay="250" data-aos-duration="800">
-                      I'm from Nagercoil, currently residing in Chennai, I had
-                      completed my higher education at St. Mary's.school, Porur,
-                      Chennai and obtained my B.Tech in Information Technology degree
-                      at Loyola Institute of Technology, pazhanchur. 
-                     Myself I'm
-                      self-motivated team player who seeking a position as a web
-                      developer , where i can apply my knowledge and abilities to
-                      achieve company goals as well as client's satisfication.
+                <p class="text-secondary pe-lg-5 lh-lg Roboto Hero__About" >
+                                  Hi! I’m Mugesh, and I’m a Web developer who has passion for building clean web applications with
+                                  intuitive
+                                  functionalities. Seeking an entry-level opportunity with an esteemed organization where I can utilize my
+                                  skills & enhance learning in the field of work. Capable of mastering new technologies.
+                                  .I enjoy the process of turning ideas into reality using creative solutions. I’m always
+                                  curious about
+                                  learning new skills, tools, and concepts.
                 </p>
               </div>
   
               <div class="col-12 col-md-5 col-lg-3 mx-auto pt-5 px-4 pb-4">
-                <div class="morph-blob text-center">
+                <div class="morph-blob text-center Hero__Blob">
                   <img
-                    class="image-fluid pt-3"
+                    class="image-fluid pt-3 Hero__Image"
                     id="Hero_img"
                     src="assets/images/Mugesh.png.png"
                     alt="Profile Picture"
                     height="auto"
-                    data-aos="fade-left"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
+                    
                   />
                 </div>
               </div>
@@ -132,7 +129,6 @@
                     class="btn shadow fw-semibold w-75 Poppins"
                     id="Button_1"
                     onclick="DownloadBtn()"
-                    data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800"
                   >
                     Download CV
                   </button>
@@ -146,7 +142,6 @@
                     href="https://github.com/M-MUGESHCHARLES?tab=repositories"
                     target="_blank"
                     title="github"
-                    data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
                   >
                     <i class="fa-brands fa-square-github fs-4 shadow"></i>
                   </a>
@@ -155,7 +150,6 @@
                     href="https://www.linkedin.com/in/mugesh-manoharan-12b29b266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     target="_blank"
                     title="linkedin"
-                    data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
                   >
                     <i class="fa-brands fa-linkedin fs-4 shadow"></i>
                   </a>
@@ -164,7 +158,6 @@
                     href="mailto:samcharlesmugesh@gmail.com"
                     target="_blank"
                     title="mail"
-                    data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
                   >
                     <i class="fa-solid fa-square-envelope fs-4 shadow"></i>
                   </a>
@@ -189,15 +182,13 @@
 
             <div class="py-3 pb-3 z-3 position-relative" id="Education">
               <div class="shapes position-relative">
-                <h2 class="position-relative RobotoSlab Heading"
-                data-aos="fade-right" data-aos-delay="500" data-aos-duration="500"
+                <h2 class="position-relative RobotoSlab Heading Section__Heading"
                 >Education :</h2>
               </div>
 
   
-              <div class="d-flex flex-column pt-3 ">
-                <div class="row pb-3 my-2" 
-                data-aos="fade-left" data-aos-delay="900" data-aos-duration="900"
+              <div class="d-flex flex-column pt-3 Section__Content">
+                <div class="row pb-3 my-2 Section__Content1" 
                 >
                   <div class="col-2 text-center align-content-center">
                     <img
@@ -206,6 +197,7 @@
                       class="p-1 rounded-circle border border-3 border-warning"
                       height="auto"
                       width="50px"
+                      id="Education-Img"
                     />
                   </div>
                   <div class="col-7 d-flex flex-column Roboto custom-fs">
@@ -213,11 +205,10 @@
                     <p class="m-0">Bachelors Degree of Information Technology ( B.Tech )</p>
                   </div>
                   <div class="col-3 text-center align-content-center">
-                    <h5 class="Poppins">2019 - 2023</h5>
+                    <h5 class="Poppins" id="Education-Year">2019 - 2023</h5>
                   </div>
                 </div>
-                <div class="row pb-3 my-2" 
-                data-aos="fade-left" data-aos-delay="1000" data-aos-duration="900"
+                <div class="row pb-3 my-2 Section__Content2" 
                 >
                   <div class="col-2 text-center align-content-center">
                     <img
@@ -226,6 +217,7 @@
                       class="p-1 rounded-circle border border-3 border-warning"
                       height="auto"
                       width="50px"
+                      id="Education-Img"
                     />
                   </div>
                   <div class="col-7 d-flex flex-column Roboto custom-fs">
@@ -233,11 +225,10 @@
                     <p class="m-0">HSC</p>
                   </div>
                   <div class="col-3 text-center align-content-center">
-                    <h5 class="Poppins">2018 - 2019</h5>
+                    <h5 class="Poppins" id="Education-Year">2018 - 2019</h5>
                   </div>
                 </div>
-                <div class="row pb-3 my-2" 
-                data-aos="fade-left" data-aos-delay="1100" data-aos-duration="900"
+                <div class="row pb-3 my-2 Section__Content3 " 
                 >
                   <div class="col-2 text-center align-content-center">
                     <img
@@ -246,6 +237,7 @@
                       class="p-1 rounded-circle border border-3 border-warning"
                       height="auto"
                       width="50px"
+                      id="Education-Img"
                     />
                   </div>
                   <div class="col-7 d-flex flex-column Roboto custom-fs">
@@ -253,7 +245,7 @@
                     <p class="m-0">SSLC</p>
                   </div>
                   <div class="col-3 text-center align-content-center Poppins">
-                    <h5>2016 - 2017</h5>
+                    <h5 class="Poppins" id="Education-Year">2016 - 2017</h5>
                   </div>
                 </div>
               </div>
@@ -277,13 +269,12 @@
   
             <div class="py-3 pt-5 position-relative z-3" id="MySkills">
               <div class="">
-                <h2 class="RobotoSlab Heading" 
-                data-aos="fade-right" data-aos-delay="500" data-aos-duration="500"
+                <h2 class="RobotoSlab Heading Section__Heading" 
                 >
                 My Skills :</h2>
               </div>
 
-                <div class="Tab-Heads RobotoSlab d-flex flex-row justify-content-center">
+                <div class="Tab-Heads RobotoSlab d-flex flex-row justify-content-center pt-4 pb-3">
                   <div class="Skills-Tab d-inline-block px-2 py-1 rounded-5">
                     <button class="TabHead px-3 py-1 me-1 rounded-5 active" onclick="setActiveTab(event, 'SKILLS')">
                       SKILLS
@@ -294,63 +285,54 @@
                   </div>
                 </div>
 
-              <div class="Tab-Contents pt-4 OpenSans p-0 m-0">
+              <div class="Tab-Contents pt-4 OpenSans p-0 m-0 Section__Content">
 
                 <div class="TabContent d-block" id="SKILLS">
-                  <div class="row">
+                  <div class="row" id="skills-container">
 
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="700" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons//html-5-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons//html-5-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">HTML</h6>
+                      <h6 class="fw-bold " >HTML</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="800" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/css-3-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/css-3-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">CSS</h6>
+                      <h6 class="fw-bold" >CSS</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="900" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/js-svgrepo-com.svg" alt="" height="auto" width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Java Script</h6>
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/js-svgrepo-com.svg" alt="" height="auto" width="50px" />
+                      <h6 class="fw-bold" >Java Script</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1000" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/react-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/react-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">React</h6>
+                      <h6 class="fw-bold" >React</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1100" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/node-js-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/node-js-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Node Js</h6>
+                      <h6 class="fw-bold" >Node Js</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1200" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/mongo-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/mongo-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Mongo DB</h6>
+                      <h6 class="fw-bold" >Mongo DB</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1300" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/express-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/express-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Express</h6>
+                      <h6 class="fw-bold" >Express</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1700" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/bootstrap-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/bootstrap-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Bootstrap</h6>
+                      <h6 class="fw-bold" >Bootstrap</h6>
                     </div>
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1700" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/material-ui-svgrepo-com.svg" alt="" height="auto"
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2 Skill__Img" src="./assets/images/icons/material-ui-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Material UI</h6>
+                      <h6 class="fw-bold" >Material UI</h6>
                     </div>
 
                   </div>
@@ -358,34 +340,34 @@
 
 
                 <div class="TabContent d-none" id="TOOLS">
-                  <div class="row" >
-                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1400" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/git-svgrepo-com.svg" alt="" height="auto" width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">GIT</h6>
+                  <div class="row" id="tools-container" >
+                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 mx-auto floating">
+                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/npm-svgrepo-com.svg" alt="" height="auto" width="50px" />
+                      <h6 class="fw-bold">npm</h6>
                     </div>
-                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1500" data-aos-duration="600">
+                    <div class="col-4 col-md-3 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
+                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/git-svgrepo-com.svg" alt="" height="auto" width="50px" />
+                      <h6 class="fw-bold" >GIT</h6>
+                    </div>
+                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
                       <img class="rounded mx-auto mb-2" src="./assets/images/icons/github-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Git Hub</h6>
+                      <h6 class="fw-bold" >Git Hub</h6>
                     </div>
-                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1600" data-aos-duration="600">
+                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
                       <img class="rounded mx-auto mb-2" src="./assets/images/icons/firebase-svgrepo-com.svg" alt="" height="auto"
                         width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Firebase</h6>
+                      <h6 class="fw-bold" >Firebase</h6>
                     </div>                   
-                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" data-aos="fade-up"
-                      data-aos-delay="1800" data-aos-duration="600">
+                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
                       <img class="rounded mx-auto mb-2" src="./assets/images/icons/wix-svgrepo-com.svg" alt="" height="auto" width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">WIX</h6>
+                      <h6 class="fw-bold" >WIX</h6>
                     </div>
-                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 mx-auto floating" data-aos="fade-up"
-                      data-aos-delay="1800" data-aos-duration="600">
-                      <img class="rounded mx-auto mb-2 " src="./assets/images/icons/canva-svgrepo-com.svg" alt="" height="auto" width="50px" />
-                      <h6 class="fw-bold" data-aos="fade-left" data-aos-delay="900" data-aos-duration="600">Canva</h6>
+                    <div class="col-4 col-md-3  mb-3 d-flex flex-column text-center px-2 py-2 mx-auto floating" >
+                      <img class="rounded mx-auto mb-2" src="./assets/images/icons/canva-svgrepo-com.svg" alt="" height="auto" width="50px" />
+                      <h6 class="fw-bold" >Canva</h6>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -403,10 +385,10 @@
           <section class="m-0 p-5 pt-3" id="MyWorks">
               <div class="shapes3 position-relative"></div>
               <div class="pt-4 m-0 p-0 position-relative text-center">
-                  <h2 class="c1 RobotoSlab" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                  <h2 class="c1 RobotoSlab Section__Heading" >
                     <span class="Heading">My Works :</span>
                   </h2>
-                  <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 Roboto" data-aos="fade-left" data-aos-delay="700" data-aos-duration="500">
+                  <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 lh-lg Roboto Section__Content" >
                     Here are some of the web development projects I've worked on,
                     showcasing my skills in front-end and back-end development. From
                     responsive designs to dynamic, interactive applications, each
@@ -414,11 +396,11 @@
                     user-friendly solutions.
                   </p>
               </div>
-  
-            <div class="d-flex flex-row overflow-x-scroll g-4 py-3 pb-5 px-5" id="ShowCase">
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+
+            <div class="d-flex flex-column flex-md-row overflow-x-scroll g-4 py-3 pb-5 px-2 px-md-5 Project_Showcase" id="ShowCase">
+
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="700" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -454,7 +436,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">Doggy Date</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                       <h6
                       class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                     >
@@ -502,9 +484,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="800" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -545,7 +526,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">Tamizh Arivom</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                         >
@@ -578,9 +559,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="900" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -601,7 +581,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">QR Generator</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                       <h6
                       class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                     >
@@ -649,9 +629,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="1000" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -682,7 +661,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">Medical Site</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                         >
@@ -738,9 +717,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="1100" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -766,7 +744,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">CURD Application</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                         >
@@ -824,9 +802,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
+              <div class="col-md-6 col-lg-4 px-0 px-md-4 px-lg-4 py-3">
                 <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg"
-                  data-aos="fade-right" data-aos-delay="1200" data-aos-duration="600"
                   >
                   <div class="card-header p-0">
                     <img
@@ -872,7 +849,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title OpenSans fw-semibold mb-3">Smart Watch</h5>
-                    <div class="Poppins">
+                    <div class="Poppins d-none d-md-block">
                         <h6
                           class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 "
                         >
@@ -951,600 +928,31 @@
           
           <section class="m-0 p-5 text-center position-relative" id="GetInTouch" >
               <div class="py-3">
-                  <div class="wave position-relative d-grid "
-                    data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                  <div class="wave position-relative d-grid Section__Heading">
                       <h2 class="css-reflect position-absolute">Get In Touch</h2>
                       <h2 class="css-reflect position-absolute">Get In Touch</h2>
                   </div>
-                  <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 mt-5 position-relative Roboto "
-                    data-aos="fade-left" data-aos-delay="700" data-aos-duration="600">
+                  <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 mt-5 position-relative lh-lg Roboto Section__Content">
                   I'm always open to connecting with like-minded individuals and exploring new opportunities.</p>
-                  <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-semibold py-3 px-4 fs-5 floating" id="Button_2" 
-                      data-bs-toggle="modal" data-bs-target="#Form">
+                  <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-semibold py-3 px-4 fs-5 floating GIT__Button" id="Button_2" >
                       Get in Touch <span class="bi mb-2"><i class="fa-solid fa-envelope ms-1"></i></span>
                   </button>
               </div>
               <div class="col-12 pt-3">
                   <div class="d-flex justify-content-evenly w-50 mx-auto">
-                      <a class='' href="https://github.com/M-MUGESHCHARLES?tab=repositories" target="_blank" title="github"
-                    data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                      <a class='' href="https://github.com/M-MUGESHCHARLES?tab=repositories" target="_blank" title="github">
                           <i class="fa-brands fa-square-github fs-4 shadow"></i>
                       </a>
                       <a class="c3"
                           href="https://www.linkedin.com/in/mugesh-manoharan-12b29b266?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
-                          target="_blank" title="linkedin"
-                    data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                          target="_blank" title="linkedin">
                           <i class="fa-brands fa-linkedin fs-4 shadow"></i>
                       </a>
-                      <a class="c3" href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail"
-                    data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                      <a class="c3" href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail">
                           <i class="fa-solid fa-square-envelope fs-4 shadow"></i>
                       </a>
                   </div>
               </div>
-          </section>
-        </div>
-
-        <!-- mobile view | AOS is not working in the mobile view hence seperate lines of code has been created for mobile view -->
-
-        <div class="d-block d-md-none m-0 p-0">
-          <section class="px-5 pt-5" id="Hero">
-            <div class="container m-0 p-0 row mx-auto">
-              <div class="col-12 col-md-10 col-lg-9 mx-auto p-0 pe-lg-5">
-                <h4 class="fw-medium Roboto" >Hi, I'm</h4>
-                <h1 class="OpenSans fw-semibold" >
-                  <span class="c1"> Mugesh </span> Manoharan
-                </h1>
-                <h5 class="pt-2 m-0" >
-                  <p href="" class="typewrite c2 font-monospace fw-semibold" data-period="2000"
-                    data-type='[ "MERN Stack Developer" , "React Developer" , "Front-end Developer" , "Web Developer" ]'>
-                    <span class="wrap"></span>
-                  </p>
-                </h5>
-        
-                <p class="text-secondary pe-lg-5 Roboto" >
-                  I'm from Nagercoil, currently residing in Chennai, I had
-                  completed my higher education at St. Mary's.school, Porur,
-                  Chennai and obtained my B.Tech in Information Technology degree
-                  at Loyola Institute of Technology, pazhanchur.
-                  Myself I'm
-                  self-motivated team player who seeking a position as a web
-                  developer , where i can apply my knowledge and abilities to
-                  achieve company goals as well as client's satisfication.
-                </p>
-              </div>
-        
-              <div class="col-12 col-md-5 col-lg-3 mx-auto pt-5 px-4 pb-4">
-                <div class="morph-blob text-center">
-                  <img class="image-fluid pt-3" id="Hero_img" src="assets/images/Mugesh.png.png" alt="Profile Picture"
-                    height="auto"  />
-                </div>
-              </div>
-        
-              <div class="col-12 col-lg-8 py-4 text-center">
-                <a class="download-link" href="assets/file/Mugesh.M_CV.pdf" download>
-                  <button type="button" class="btn shadow fw-semibold w-75 Poppins" id="Button_1" onclick="DownloadBtn()"
-                    >
-                    Download CV
-                  </button>
-                </a>
-              </div>
-        
-              <div class="col-12 pt-3">
-                <div class="d-flex justify-content-evenly w-50 mx-auto">
-                  <a class="c3" href="https://github.com/M-MUGESHCHARLES?tab=repositories" target="_blank" title="github"
-                    >
-                    <i class="fa-brands fa-square-github fs-4 shadow"></i>
-                  </a>
-                  <a class="c3"
-                    href="https://www.linkedin.com/in/mugesh-manoharan-12b29b266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank" title="linkedin" >
-                    <i class="fa-brands fa-linkedin fs-4 shadow"></i>
-                  </a>
-                  <a class="c3" href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail" >
-                    <i class="fa-solid fa-square-envelope fs-4 shadow"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section id="WaveTop"></section>
-        
-          <section class="m-0 p-5 position-relative" id="EducationAndSkills">
-            <div class="fish-container">
-              <span class="fish-o1"><object class="fish1" type="image/svg+xml" data="assets/images/icons/fish.svg"></object></span>
-              <span class="fish-o2"><object class="fish2" type="image/svg+xml" data="assets/images/icons/fish.svg"></object></span>
-              <span class="fish-o3"><object class="fish3" type="image/svg+xml" data="assets/images/icons/fish.svg"></object></span>
-              <span class="fish-o4"><object class="fish4" type="image/svg+xml" data="assets/images/icons/fish.svg"></object></span>
-            </div>
-            <div class="py-3 pb-3 position-relative z-3" id="Education">
-              <div class="shapes position-relative">
-                <h2 class="position-relative RobotoSlab Heading" >Education :</h2>
-              </div>
-        
-              <div class="d-flex flex-column pt-3">
-                <div class="row pb-3 my-2" >
-                  <div class="col-2 text-center align-content-center">
-                    <img src="./assets/images/images/LIT.jpeg" alt="" class="p-1 rounded-circle border border-3 border-warning" id="Education-Img"
-                      height="auto" width="50px" />
-                  </div>
-                  <div class="col-7 d-flex flex-column Roboto custom-fs">
-                    <h6 class="fw-bold">Loyola Institute of Technology</h6>
-                    <p class="m-0">Bachelors Degree of Information Technology ( B.Tech )</p>
-                  </div>
-                  <div class="col-3 text-center align-content-center">
-                    <h5 class="Poppins" id="Education-Year" >2019 - 2023</h5>
-                  </div>
-                </div>
-                <div class="row pb-3 my-2" >
-                  <div class="col-2 text-center align-content-center">
-                    <img src="./assets/images/images/SCHOOL.svg" alt=""
-                      class="p-1 rounded-circle border border-3 border-warning" height="auto" width="50px" id="Education-Img" />
-                  </div>
-                  <div class="col-7 d-flex flex-column Roboto custom-fs">
-                    <h6 class="fw-bold">St.Mary's .Mat .Hr .Sec .School</h6>
-                    <p class="m-0">HSC</p>
-                  </div>
-                  <div class="col-3 text-center align-content-center">
-                    <h5 class="Poppins" id="Education-Year" >2018 - 2019</h5>
-                  </div>
-                </div>
-                <div class="row pb-3 my-2" >
-                  <div class="col-2 text-center align-content-center">
-                    <img src="./assets/images/images/SCHOOL.svg" alt=""
-                      class="p-1 rounded-circle border border-3 border-warning" height="auto" width="50px" id="Education-Img" />
-                  </div>
-                  <div class="col-7 d-flex flex-column Roboto custom-fs">
-                    <h6 class="fw-bold">St.Mary's .Mat .Hr .Sec .School</h6>
-                    <p class="m-0">SSLC</p>
-                  </div>
-                  <div class="col-3 text-center align-content-center Poppins">
-                    <h5 id="Education-Year" >2016 - 2017</h5>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="shapes2 position-relative"></div>
-              
-            </div>
-
-            <div class="fish-container2 z-1">
-              <span class="shark-o1"><object class="shark" type="image/svg+xml"
-                  data="assets/images/icons/shark-facing-right-svgrepo-com.svg"></object></span>
-            </div>
-            
-            <div class="fish-container3 z-1">
-              <span class="fish-o5"><object class="fish5" type="image/svg+xml" data="assets/images/icons/clown-fish-svgrepo-com.svg"></object></span>
-              <span class="fish-o6"><object class="fish6" type="image/svg+xml" data="assets/images/icons/clown-fish-svgrepo-com.svg"></object></span>
-              <span class="fish-o7"><object class="fish7" type="image/svg+xml" data="assets/images/icons/clown-fish-svgrepo-com.svg"></object></span>
-              <span class="fish-o8"><object class="fish8" type="image/svg+xml" data="assets/images/icons/clown-fish-svgrepo-com.svg"></object></span>
-              <span class="fish-o9"><object class="fish9" type="image/svg+xml" data="assets/images/icons/clown-fish-svgrepo-com.svg"></object></span>
-            </div>
-        
-            <div class="py-3 pt-5 position-relative z-3" id="MySkills">
-              <div class="">
-                <h2 class="RobotoSlab Heading" >
-                  My Skills :</h2>
-              </div>
-              <div class="row pt-4 OpenSans">
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons//html-5-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >HTML</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/css-3-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >CSS</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/js-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold">Java Script</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/react-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >React</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/node-js-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Node Js</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/mongo-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Mongo DB</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/express-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Express</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/git-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >GIT</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/github-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Git Hub</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/firebase-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Firebase</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/bootstrap-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Bootstrap</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto" >
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/material-ui-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Material UI</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 floating mx-auto">
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/wix-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >WIX</h6>
-                </div>
-                <div class="col-4 col-md-3 col-lg-2 mb-3 d-flex flex-column text-center px-2 py-2 mx-auto floating">
-                  <img class="rounded mx-auto mb-2" src="./assets/images/icons/canva-svgrepo-com.svg" alt="" height="auto"
-                    width="50px" />
-                  <h6 class="fw-bold" >Canva</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="fish-container4 z-2 ">
-              <span class="star-fish-o1"><object class="star-fish" type="image/svg+xml" data="assets/images/icons/starfish-svgrepo-com.svg"></object> </span>
-              <span class="sea-horse-o1"><object class="sea-horse" type="image/svg+xml" data="assets/images/icons/seahorse-silhouette-svgrepo-com.svg"></object> </span>
-            </div>
-
-          </section>
-        
-          <section id="WaveBottom"></section>
-        
-          <section class="m-0 p-5 pt-3" id="MyWorks">
-            <div class="shapes3 position-relative"></div>
-            <div class="pt-4 m-0 p-0 position-relative text-center">
-              <h2 class="c1 RobotoSlab" >
-                <span class="Heading">My Works :</span>
-              </h2>
-              <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 Roboto" >
-                Here are some of the web development projects I've worked on,
-                showcasing my skills in front-end and back-end development. From
-                responsive designs to dynamic, interactive applications, each
-                project reflects my passion for creating efficient and
-                user-friendly solutions.
-              </p>
-            </div>
-        
-            <div class="row g-4 py-3 pb-5 px-5" id="ShowCase">
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg" >
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/DoggyDate/DoggyDate.jpg" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects//DoggyDate//DoggyDate_1.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects//DoggyDate/DoggyDate-2.png" class="card-img-top" alt="" />
-                    <img src="./assets//images//Projects/DoggyDate/DoggyDate-3.png" class="card-img-top" alt="" />
-                    <img src="./assets//images//Projects/DoggyDate/DoggyDate-4.png" class="card-img-top" alt="" />
-                    <img src="./assets//images//Projects/DoggyDate/DoggyDate-5.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">Doggy Date</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Front-end
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        HTML
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CSS
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Bootstrap
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="https://github.com/M-MUGESHCHARLES/Doggy-Date.git" title="github-link" target="_blank"
-                      rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                      </button>
-                    </a>
-                    <a href="https://m-mugeshcharles.github.io/Doggy-Date/" title="live-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg" >
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/tamizhArivom/tamizh-arivom.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-1.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-2.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-3.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-4.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-5.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/tamizhArivom/tamizhArivom-6.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">Tamizh Arivom</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        No Code Site
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Wix
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Web Design
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="https://samcharlesmugesh20.wixsite.com/tamizharivom" title="live-link" target="_blank"
-                      rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg" >
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/QRCodeGenerator/QR-Code-Gnenerator.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/QRCodeGenerator/qr-1.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/QRCodeGenerator//qr-2.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">QR Generator</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Front-end
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        HTML
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CSS
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Java Script
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        API
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Bootstrap
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="" title="github-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                      </button>
-                    </a>
-                    <a href="" title="live-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg">
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/MedicalSite/medical-clinic.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/MedicalSite/medical-2.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/MedicalSite/medical-3.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/MedicalSite/medical-4.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/MedicalSite/medical-5.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">Medical Site</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Front-end
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        HTML
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CSS
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Java Script
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Bootstrap
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Email Js
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="https://github.com/M-MUGESHCHARLES/Medical-Clinic-site.git" title="github-link" target="_blank"
-                      rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                      </button>
-                    </a>
-                    <a href="https://m-mugeshcharles.github.io/Medical-Clinic-site/" title="live-link" target="_blank"
-                      rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg" >
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/CURD/curd-1.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/CURD/curd-2.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/CURD/curd-3.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/CURD/curd-4.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">CURD Application</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        MERN-Stack
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        React Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CSS
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Bootstrap
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Express Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Mongo DB
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Node Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CURD Operations
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="" title="github-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                      </button>
-                    </a>
-                    <a href="" title="live-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 px-0 px-md-2 px-lg-4">
-                <div class="card rounded-4 overflow-hidden border-3 h-100 shadow-lg" >
-                  <div class="card-header p-0">
-                    <img src="./assets//images/Projects/smartwatch/sw-1.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-2.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-3.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-4.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-5.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-6.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-7.png" class="card-img-top" alt="" />
-                    <img src="./assets//images/Projects/smartwatch/sw-8.png" class="card-img-top" alt="" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title OpenSans fw-semibold mb-3">Smart Watch</h5>
-                    <div class="Poppins">
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        MERN-Stack
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        React Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        CSS
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Bootstrap
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Express Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Mongo DB
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Node Js
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        E-Commerce
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        Toastify
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        React Slick
-                      </h6>
-                      <h6 class="badge bg-warning-subtle border border-2 border-warning-subtle text-warning rounded-3 ">
-                        React Router
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="card-footer Poppins">
-                    <a href="https://github.com/M-MUGESHCHARLES/smart-watch.git" title="github-link" target="_blank"
-                      rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                      </button>
-                    </a>
-                    <a href="" title="live-link" target="_blank" rel="noopener">
-                      <button type="button" class="btn shadow m-0" id="Button_2">
-                        <i class="bi bi-globe"></i><span class="ps-2 ps-md-3 fw-semibold ">Website</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <div class="shapes4 position-relative"></div>
-          </section>
-        
-          <section class="m-0 p-5 text-center position-relative" id="GetInTouch">
-            <div class="py-3">
-              <div class="wave position-relative d-grid ">
-                <h2 class="css-reflect position-absolute">Get In Touch</h2>
-                <h2 class="css-reflect position-absolute">Get In Touch</h2>
-              </div>
-              <p class="c3 col-md-10 mx-auto px-lg-5 px-md-4 py-3 mt-5 position-relative Roboto " >
-                I'm always open to connecting with like-minded individuals and exploring new opportunities.</p>
-              <button type="button" class="btn rounded-5 shadow my-3 icon-link icon-link-hover fw-semibold py-3 px-4 fs-5 floating"
-                id="Button_2" data-bs-toggle="modal" data-bs-target="#Form">
-                Get in Touch <span class="bi mb-2"><i class="fa-solid fa-envelope ms-1"></i></span>
-              </button>
-            </div>
-            <div class="col-12 pt-3">
-              <div class="d-flex justify-content-evenly w-50 mx-auto">
-                <a class='' href="https://github.com/M-MUGESHCHARLES?tab=repositories" target="_blank" title="github"
-                  >
-                  <i class="fa-brands fa-square-github fs-4 shadow"></i>
-                </a>
-                <a class="c3"
-                  href="https://www.linkedin.com/in/mugesh-manoharan-12b29b266?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
-                  target="_blank" title="linkedin" >
-                  <i class="fa-brands fa-linkedin fs-4 shadow"></i>
-                </a>
-                <a class="c3" href="mailto:samcharlesmugesh@gmail.com" target="_blank" title="mail" >
-                  <i class="fa-solid fa-square-envelope fs-4 shadow"></i>
-                </a>
-              </div>
-            </div>
           </section>
         </div>
 

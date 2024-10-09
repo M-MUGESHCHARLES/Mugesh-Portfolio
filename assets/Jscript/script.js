@@ -64,7 +64,7 @@ if (window.innerWidth < 768) {
 window.addEventListener("load", initializeAOS);
 window.addEventListener("resize", initializeAOS);
 
-// ===============================================
+// ===========================================================
 
 document.getElementsByClassName("TabHead")[0].classList.add("active");
 document.getElementsByClassName("TabContent")[0].classList.remove("d-none");
@@ -90,3 +90,86 @@ function setActiveTab(event, contentId) {
   // Add 'active' class to the clicked tab header
   event.currentTarget.classList.add("active");
 }
+
+// ================================================================= ScrollReveal
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+  // reset: true,
+};
+
+ScrollReveal().reveal(".Hero__Name", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay:1800,
+});
+
+ScrollReveal().reveal(".Hero__Intrests", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+ScrollReveal().reveal(".Hero__About", {
+  ...scrollRevealOption,
+  delay: 1200,
+});
+
+ScrollReveal().reveal(".Hero__Blob", {
+  ...scrollRevealOption,
+  delay: 1200,
+});
+
+ScrollReveal().reveal(".Hero__Image", {
+  ...scrollRevealOption,
+  delay: 2000,
+  origin:"right",
+});
+
+ScrollReveal().reveal(".Section__Heading", {
+  ...scrollRevealOption,
+  delay: 500,
+  origin: "left",
+});
+
+ScrollReveal().reveal(".Section__Content", {
+  ...scrollRevealOption,
+  delay: 1000,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".Section__Content1", {
+  ...scrollRevealOption,
+  delay: 1200,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".Section__Content2", {
+  ...scrollRevealOption,
+  delay: 1400,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".Section__Content3", {
+  ...scrollRevealOption,
+  delay: 1600,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".Skill__Img", {
+  ...scrollRevealOption,
+  delay: 1800,
+});
+
+ScrollReveal().reveal(".Project_Showcase", {
+  ...scrollRevealOption,
+  delay: 2000,
+  origin: "right",
+});
+
+ScrollReveal().reveal(".GIT__Button", {
+  ...scrollRevealOption,
+  delay: 1800,
+});
+
